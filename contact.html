@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contact Us</title>
+    <link rel="icon" href="/img/faviconmain.ico" />
+    <link rel="stylesheet" href="./css/abt-cnt.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+
+<body>
+    <main>
+        <!-- navbar -->
+        <header class="nbar">
+            <p class="title">
+                NvM.io
+            </p>
+            <ul>
+                <li><a href="./index.html" class="anchort">Blogs</a></li>
+                <li><a href="./my-blog.html" class="anchort">My Blogs</a></li>
+                <li><a href="./about.html" class="anchort">About Us</a></li>
+                <li><a href="./contact.html" class="anchort">Contact</a></li>
+            </ul>
+            <p class="wbtn">
+                <!-- button link kia h -->
+                <button type="button">
+                    <span id="log"></span>&nbsp;<i class="fa fa-user" aria-hidden="true"></i></button>
+                <button type="button" onclick="location.href='./write.html'">Write &nbsp;<i class="fa fa-pencil"
+                        aria-hidden="true"></i> </button>
+            </p>
+        </header>
+
+        <!-- body -->
+
+        <section class="cnt-main">
+            <div class="cnt-title">
+                <p>Need to get in touch ?</p>
+                <p class="cnt-descp">Fill out the following form with your queries and we'll get back to you shortly.
+                </p>
+                <p class="cnt-descp1">Also, Make sure to include your email, so that we can reach out to you, if
+                    required.</p>
+            </div>
+
+            <div class="cnt-form">
+                <div>
+                    <form action="">
+                        <div class="cnt-fb">
+                            <label for="">Name </label>
+                            <input type="text" placeholder="Enter Your Full Name" id="cnt-name">
+                        </div>
+                        <div class="cnt-fb">
+                            <label for="">E-Mail ID </label>
+                            <input type="email" placeholder="Enter Your Email ID" id="cnt-email">
+                        </div>
+                        <div class="cnt-fb">
+                            <label for="">Query</label>
+                            <textarea type="text" placeholder="Enter Your Query" id="cnt-query"></textarea>
+                        </div>
+                        <div class="cnt-save">
+                            <button type="button" id="cnt-button"><i class="fa fa-floppy-o" aria-hidden="true"></i>
+                                &nbsp;Save</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./js/util.js"></script>
+    <script src="./js/contact.js"></script>
+</body>
+
+</html>

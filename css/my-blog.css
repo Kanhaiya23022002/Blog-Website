@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif, arial;
+  list-style: none;
+}
+
+body {
+  background: linear-gradient(90deg, rgb(238, 211, 181), rgb(221, 182, 140));
+}
+/* main navbar */
+.nbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(245, 206, 133);
+  align-items: center;
+  height: 4rem;
+  box-shadow: 0px 0px 3px 2px brown;
+  position: sticky;
+  top: 0;
+}
+
+.nbar > ul {
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+}
+
+.nbar > ul > li {
+  margin: 1rem;
+  color: brown;
+}
+
+.nbar > ul > li:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 1.3rem;
+  margin-left: 3rem;
+  font-weight: bold;
+  color: rgb(49, 58, 43);
+}
+
+.title:hover {
+  cursor: pointer;
+}
+
+.anchort {
+  text-decoration: none;
+  color: brown;
+}
+
+.wbtn {
+  margin-right: 3rem;
+}
+
+.wbtn > button {
+  padding: 0.4rem 1.3rem;
+  border-radius: 10px;
+  background-color: brown;
+  color: wheat;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.wbtn > button:active {
+  color: brown;
+  background-color: rgb(239, 174, 54);
+}
+
+@media only screen and (max-width: 980px) {
+  .nbar {
+    height: 10rem;
+    font-size: 2rem;
+    box-shadow: 0px 0px 5px 4px brown;
+  }
+  .title {
+    font-size: 2.4rem;
+    margin-left: 1rem;
+  }
+  .wbtn > button {
+    padding: 1.2rem 2rem;
+    font-size: 1.7rem;
+  }
+  .navbar > ul {
+    padding-left: 0;
+  }
+}
+
+/* Body Content */
+.bbg {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2rem;
+  width: 100%;
+}
+
+/* main cardbody */
+.bgsec {
+  background-color: wheat;
+  width: 40vw;
+  /* height: 40vh; */
+  display: flex;
+  border-radius: 10px;
+  justify-content: space-between;
+  margin: 2rem;
+  overflow: auto;
+  box-shadow: 2px -2px 12px 2px rgb(191, 154, 80);
+}
+
+.bgsec:hover {
+  box-shadow: 2px -2px 12px 4px rgb(159, 128, 66);
+}
+
+.lhs {
+  margin: 1.3rem 1.2rem;
+}
+
+.rhs {
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+}
+.rhs > img {
+  width: 15vw;
+  border-radius: 10px;
+}
+
+.c-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: brown;
+}
+
+.c-desp {
+  color: brown;
+}
+
+.author {
+  text-align: right;
+  font-size: 0.9rem;
+}
+
+.delbtn {
+  text-align: right;
+  font-size: 0.9rem;
+}
+
+.delbtn > button {
+  padding: 0.4rem 1.3rem;
+  border-radius: 10px;
+  background-color: brown;
+  color: wheat;
+  font-weight: bold;
+  font-size: 0.8rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.delbtn > button :active{
+  color: brown;
+  background-color: rgb(239, 174, 54);
+}
+
+@media only screen and (max-width: 980px) {
+  .bgsec {
+    width: 100vw;
+    /* height: 50vh; */
+    flex-direction: column;
+    border-radius: 20px;
+    overflow: auto;
+  }
+
+  .lhs {
+    margin: 1rem;
+  }
+  .rhs {
+    justify-content: center;
+    height: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .rhs > img {
+    object-fit: cover;
+    width: 90%;
+    height: 80%;
+  }
+
+  .c-title {
+    margin: 0.3rem;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .c-desp {
+    font-size: 1rem;
+    text-align: justify;
+    margin: 0.5rem;
+  }
+}

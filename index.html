@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home Page</title>
+    <link rel="icon" href="/img/faviconmain.ico" />
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body>
+    <main>
+        <!-- navbar -->
+        <header class="nbar">
+            <p class="title">
+                NvM.io
+            </p>
+            <ul>
+                <li><a href="./index.html" class="anchort">Blogs</a></li>
+                <li><a href="./my-blog.html" class="anchort">My Blogs</a></li>
+                <li><a href="./about.html" class="anchort">About Us</a></li>
+                <li><a href="./contact.html" class="anchort">Contact</a></li>
+            </ul>
+            <p class="wbtn">
+                <!-- button link kia hai -->
+                <button type="button">
+                    <span id="log"></span>&nbsp;<i class="fa fa-user" aria-hidden="true"></i></button>
+                <button type="button" onclick="location.href='./write.html'">Write &nbsp;<i class="fa fa-pencil"
+                        aria-hidden="true"></i> </button>
+            </p>
+        </header>
+
+        <!-- Body Content -->
+        <section class="bbg" id="dyn-blog"></section>
+    </main>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
